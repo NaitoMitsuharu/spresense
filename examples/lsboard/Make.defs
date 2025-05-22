@@ -1,0 +1,4 @@
+
+ifneq ($(CONFIG_EXAMPLES_LSBOARD),)
+CONFIGURED_APPS += lsboard
+endif

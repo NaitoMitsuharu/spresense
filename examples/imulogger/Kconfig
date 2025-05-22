@@ -1,0 +1,25 @@
+
+config EXAMPLES_IMULOGGER
+	tristate "imulogger command enabled"
+	default y
+	---help---
+		Enable the imulogger app
+
+if EXAMPLES_IMULOGGER
+
+config EXAMPLES_IMULOGGER_PROGNAME
+	string "Program name"
+	default "imulogger"
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config EXAMPLES_IMULOGGER_PRIORITY
+	int "imulogger task priority"
+	default 100
+
+config EXAMPLES_IMULOGGER_STACKSIZE
+	int "imulogger stack size"
+	default 2048
+
+endif

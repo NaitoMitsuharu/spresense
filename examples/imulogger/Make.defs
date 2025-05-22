@@ -1,0 +1,4 @@
+
+ifneq ($(CONFIG_EXAMPLES_IMULOGGER),)
+CONFIGURED_APPS += imulogger
+endif
